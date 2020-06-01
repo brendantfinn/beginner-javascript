@@ -9,8 +9,48 @@
 </head>
 
 <body>
-  <script> 
+  <script> //Script tag is telling HTML to run this as Javascript
+  'use strict';
+  //Semi Colans at the end of each statment are there to terminate the line of JavaScript
   
+  //VARIABLE DECLARATION STATEMENTS (var, let, const)
+  //const by default 
+  //let when need mutable variable 
+  //var hardly ever
+
+  //varaibles should NOT start with a capital unless they are a CLASS - this is a convention
+
+  var first = 'wes'; // 'var' variables can be re-declared and updated. Function scope, Duplicate identifiers are permitted, Value is mutable 
+
+  let age = 300; // 'let' is now preferred for variable declaration(ES6). Block Scoped, Duplicate identifiers are NOT permitted, Value is mutable 
+
+  const cool = true; //'const' is for constant. Block Scoped, Duplicate identifiers are NOT permitted, Value is NOT mutable. 	 
+  //All 3 of these are variables (var, let, const) set to DATA TYPES: string, integer, boolean
+  
+  first = 'westerhoff'; // only have to declare the variable w/ var/let ONCE; no need to put infront to update
+  age = 400;
+  // cool = false // TypeError: Assignment to constant varaible - can't udate constant varaibles. 
+  
+  //FUNCTION CALL STATEMENT 
+  console.log(first) 
+
+  //CODE BLOCK 
+  if (age > 10) {
+    console.log('CodeBlock Example: You are old');
+  } 
+  
+  dog = 'snickers'; // Early days of JS you use to be able to make a varaible with out declaring it (var, let, const) - it would autmatically correct it to var for you.
+  console.log(dog) //Uncaught ReferenceError: dog is not defined happens becasue of 'use strict';
+
+
+
+  // camelCase
+  const iLovePizza = true;
+  //UpperCamelCase
+  const ILoveEatingHotDogs = false; 
+
+
+
   </script>
 </body>
 
