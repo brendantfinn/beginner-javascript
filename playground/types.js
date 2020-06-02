@@ -78,3 +78,14 @@ const person = {
 };
 console.log(person)
 
+// NULL & UNDEFINDED
+// UNDEFINDED creating a variable and not setting a value will be read as UNDEFINDED 
+let puppy
+console.log(`Puppy Undefined: ${person.dog}`)
+console.log(`Dog Undefinded: ${person.dog}`) // UNDEFINDED - since nothing is there
+
+let somethingUndefined;//can't const something that doesnt have a value
+const somethingNull = null; // NULL has a value that is explictly set to nothing aka NULL 
+
+
+
