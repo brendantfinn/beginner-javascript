@@ -42,7 +42,7 @@ console.log(hello2)
 //NUMBERS
 
 
-const age = 27.8; // Number - Float is a decimal 
+let age = 27.8; // Number - Float is a decimal 
 const birthYear = 1993 //Number integer is a whole number
 console.log(age, name)
 
@@ -87,5 +87,17 @@ console.log(`Dog Undefinded: ${person.dog}`) // UNDEFINDED - since nothing is th
 let somethingUndefined;//can't const something that doesnt have a value
 const somethingNull = null; // NULL has a value that is explictly set to nothing aka NULL 
 
+
+//BOOLEANS and EQUALITY
+
+//Booleans: true or false / on or off / 1 or 0
+
+let isDrawing = false; //Flag Variable 
+age = 18 //age is set above so for this example i am just updating the age in this position
+const ofAge = age > 19;
+console.log(`Age:${age} - Older that 19?: ${ofAge}`)
+
+console.log(`STRICT === ${age === 18}`) // same values same type
+console.log(`== ${age == "18"}`) // same values - doesnt check if type is the same
 
 
