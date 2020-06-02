@@ -68,5 +68,13 @@ console.log(`Dad gets ${dadGets} smarties`)
 const price = 1035; // store money in cents
 
 
-
+//OBJECTS - EVERYTHING IN JAVASCRIPT IS A OBJECT 
+//Order doesn't matter in an Object - it cane be any order. If you need ORDER us an ARRAY
+const person = {
+    //properties: value
+    first: 'wes',
+    last: 'bos',
+    age: 32,
+};
+console.log(person)
 
