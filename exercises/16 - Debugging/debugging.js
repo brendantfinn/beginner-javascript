@@ -13,10 +13,9 @@ people.forEach((person, index) => {
 });
 
 people.forEach((person, index) => {
-    // debugger;
-    console.log(`${person.name} DEBUGGER`);
-
-  });
+  // debugger;
+  console.log(`${person.name} DEBUGGER`);
+});
 
 // Console Methods
 people.forEach((person, index) => {
