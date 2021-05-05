@@ -1,3 +1,7 @@
+// ACCESS FUNCTIONS AND VARIABLES BEFORE THEY ARE CREATED
+// In JavaScript, a variable can be declared after it has been used.
+// In other words; a variable can be used before it has been declared.
+
 /* esline-disable */
 let age;
 console.log(age);
@@ -12,4 +16,6 @@ function sayHi() {
   console.log(add(10, 2));
 }
 
-const add = (a, b) => a + b;
+function add(a, b){
+  return a + b;
+}
