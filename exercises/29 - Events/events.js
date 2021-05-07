@@ -13,12 +13,31 @@ coolButton.addEventListener('click', hooray);
 // butts.removeEventListener('click', handleClick);
 
 // LISTEN ON MULTIPLE ITEMS
-const buyButtons = document.querySelectorAll('.buy');
+const buyButtons = document.querySelectorAll('button.buy');
 
-function handleBuyItem() {
-  console.log(`BUYING ITEM`);
+function handleBuyButtonClick(event) {
+  // const button = event.target;
+  console.log(event.target);
+  console.log(event.currentTarget);
+  console.log(event.target === event.currentTarget);
+  // STOP THIS EVENT FROM BUBBLING UP
+  event.stopPropagation();
+
+  // EVENT TARGER VS CURRENT TARGER - -
 }
-function loopBuyButton(e) {
-  e.addEventListener('click', handleBuyItem);
-}
-buyButtons.forEach(loopBuyButton);
+
+buyButtons.forEach(function(e) {
+  e.addEventListener('click', handleBuyButtonClick);
+  // console.log(`${}`)
+});
+
+window.addEventListener('click', function() {
+  console.log('YOU CLICKED THE WINDOW');
+});
+
+const photoEl = document.querySelector('.photo');
+
+photoEl.addEventListener('mousemove', function(e) {
+  console.log(e.currentTarget.count);
+  // console.log(this);
+});
