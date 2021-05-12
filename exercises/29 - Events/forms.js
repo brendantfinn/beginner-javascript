@@ -20,7 +20,7 @@ const signupForm = document.querySelector('[name="signup"]');
 
 signupForm.addEventListener('submit', function(e) {
   e.preventDefault();
-//   console.dir(e.currentTarget.name.value);
+  //   console.dir(e.currentTarget.name.value);
   const name = e.currentTarget.name.value;
   if (name.includes('chad')) {
     alert('sorry bro');
@@ -28,8 +28,15 @@ signupForm.addEventListener('submit', function(e) {
   }
 });
 
-function logEvent(e){
-    console.log(e.currentTarget.value)
+function logEvent(e) {
+  console.log(e.currentTarget.value);
 }
 signupForm.name.addEventListener('keyup', logEvent);
 signupForm.name.addEventListener('keydown', logEvent);
+
+// events accesibility gotchas and keyboard codes
+const photo = document.querySelector('.photo');
+
+photo.addEventListener('click', function() {
+  console.log('you clicked photo');
+});
